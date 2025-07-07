@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="..\buildMultiTargeting\OAuth2DotNetClient.props" />
+  <Import Project="../buildMultiTargeting/OAuth2DotNetClient.props" />
 </Project>

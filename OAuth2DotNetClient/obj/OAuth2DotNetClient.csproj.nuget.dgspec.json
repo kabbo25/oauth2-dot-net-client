@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kabbo\\ghq\\github.com\\kabbo25\\sso-server\\OAuth2DotNetClient\\OAuth2DotNetClient\\OAuth2DotNetClient.csproj": {}
+    "/Users/kabboghosh/ghq/github.com/kabbo25/oauth2-dot-net-client/OAuth2DotNetClient/OAuth2DotNetClient.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kabbo\\ghq\\github.com\\kabbo25\\sso-server\\OAuth2DotNetClient\\OAuth2DotNetClient\\OAuth2DotNetClient.csproj": {
+    "/Users/kabboghosh/ghq/github.com/kabbo25/oauth2-dot-net-client/OAuth2DotNetClient/OAuth2DotNetClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kabbo\\ghq\\github.com\\kabbo25\\sso-server\\OAuth2DotNetClient\\OAuth2DotNetClient\\OAuth2DotNetClient.csproj",
+        "projectUniqueName": "/Users/kabboghosh/ghq/github.com/kabbo25/oauth2-dot-net-client/OAuth2DotNetClient/OAuth2DotNetClient.csproj",
         "projectName": "OAuth2DotNetClient",
-        "projectPath": "C:\\Users\\kabbo\\ghq\\github.com\\kabbo25\\sso-server\\OAuth2DotNetClient\\OAuth2DotNetClient\\OAuth2DotNetClient.csproj",
-        "packagesPath": "C:\\Users\\kabbo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kabbo\\ghq\\github.com\\kabbo25\\sso-server\\OAuth2DotNetClient\\OAuth2DotNetClient\\obj\\",
+        "projectPath": "/Users/kabboghosh/ghq/github.com/kabbo25/oauth2-dot-net-client/OAuth2DotNetClient/OAuth2DotNetClient.csproj",
+        "packagesPath": "/Users/kabboghosh/.nuget/packages/",
+        "outputPath": "/Users/kabboghosh/ghq/github.com/kabbo25/oauth2-dot-net-client/OAuth2DotNetClient/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\kabbo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/kabboghosh/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,8 +37,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -68,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/Users/kabboghosh/.dotnet/sdk/8.0.411/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

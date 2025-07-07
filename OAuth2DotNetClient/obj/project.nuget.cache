@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IJVxaj7ma2g=",
+  "dgSpecHash": "y2qAEr8aKu8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\kabbo\\ghq\\github.com\\kabbo25\\sso-server\\OAuth2DotNetClient\\OAuth2DotNetClient\\OAuth2DotNetClient.csproj",
+  "projectFilePath": "/Users/kabboghosh/ghq/github.com/kabbo25/oauth2-dot-net-client/OAuth2DotNetClient/OAuth2DotNetClient.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
