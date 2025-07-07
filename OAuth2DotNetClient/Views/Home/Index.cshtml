@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OAuth2 .NET Client</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #666;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: transform 0.2s;
+            margin: 5px;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .btn-danger {
+            background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+        }
+        .info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+            text-align: left;
+        }
+        .info h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .info ul {
+            color: #666;
+            margin: 0;
+            padding-left: 20px;
+        }
+        .authenticated {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+            color: #155724;
+        }
+        .token-display {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            word-break: break-all;
+            text-align: left;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>OAuth2 .NET Client</h1>
+        
+        @if (ViewBag.Authenticated != true)
+        {
+            <p>Welcome to the .NET OAuth2 Client Application. Click the button below to authenticate with the OAuth2 Authorization Server.</p>
+            
+            <a href="@ViewBag.AuthorizationUrl" class="btn">Login with OAuth2</a>
+            
+            <div class="info">
+                <h3>Test Credentials</h3>
+                <ul>
+                    <li><strong>Username:</strong> user</li>
+                    <li><strong>Password:</strong> password</li>
+                </ul>
+            </div>
+            
+            <div class="info">
+                <h3>OAuth2 Flow Details</h3>
+                <ul>
+                    <li><strong>Authorization Server:</strong> localhost:9000</li>
+                    <li><strong>Client Application:</strong> localhost:8080</li>
+                    <li><strong>Client ID:</strong> common-client</li>
+                    <li><strong>Scopes:</strong> openid, profile, read</li>
+                </ul>
+            </div>
+        }
+        else
+        {
+            <div class="authenticated">
+                <h3>✓ Successfully Authenticated!</h3>
+                <p>You are now logged in and have a valid access token.</p>
+            </div>
+            
+            <div class="token-display">
+                <strong>Access Token:</strong><br>
+                @ViewBag.AccessToken
+            </div>
+            
+            <div>
+                <a href="/logout" class="btn btn-danger">Logout</a>
+            </div>
+            
+            <div class="info">
+                <h3>Available Actions</h3>
+                <ul>
+                    <li><strong>Access Token:</strong> Successfully obtained and displayed above</li>
+                    <li><strong>Logout:</strong> Clear session and tokens</li>
+                </ul>
+            </div>
+        }
+    </div>
+</body>
+</html>
